@@ -26,3 +26,40 @@ bot.on('message', function(user, userID, channelID, message, event) {
         });
     }
 });
+
+bot.on('message', function(user, userID, channelID, message, event) {
+    if (message === "?jop") {
+        bot.sendMessage({
+            to: channelID,
+            message: "test"
+        });
+    }
+});
+var naamHack;
+
+bot.on('message', function(user, userID, channelID, message, event) {
+    if (message === "nigger") {
+        bot.sendMessage({
+            to: channelID,
+            message: "Shut the fuck up <@" + userID + "> or else..."
+        });
+    }
+});
+
+bot.on('message', function(user, userID, channelID, message, event) {
+    if (message === "HANS") {
+        bot.sendMessage({
+            to: channelID,
+            message: "GET ZE FLAMMENWERFER!"
+        });
+    }
+});
+
+bot.on('message', function(user, userID, channelID, message, event) {
+    if (message === "<@283962109870604289>") {
+        bot.sendMessage({
+            to: channelID,
+            message: "The fuck you say?"
+        });
+    }
+});

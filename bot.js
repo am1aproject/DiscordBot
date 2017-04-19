@@ -72,3 +72,17 @@ bot.on('message', function(user, userID, channelID, message, event) {
         });
     }
 });
+
+bot.on('message', function(user, userID, channelID, message, event) {
+    if (message === "mute") {
+        client.mute({
+            userID
+        })
+        
+        
+        bot.sendMessage({
+            to: channelID,
+            message: "Hello <@" + userID + ">"
+        });
+    }
+});
